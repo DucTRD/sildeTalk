@@ -1,0 +1,51 @@
+\usepackage{listings} 
+
+\definecolor{verylightgray}{rgb}{.8,.8,.8}
+\definecolor{lightblue}{rgb}{190,218,255}
+\definecolor{orangeyellow}{rgb}{253,201,0}
+\definecolor{lightpink}{rgb}{255,243,254}
+
+\definecolor{myorange}{HTML}{FDC900}
+\definecolor{myblue}{HTML}{BAD4FF}
+\definecolor{mypink}{HTML}{F3D2FE}
+\definecolor{mygray}{HTML}{4A4A4A}
+
+\lstdefinelanguage{modelLang}{
+% 	commentstyle=\color{gray}\ttfamily,
+    commentstyle=\color{green}, % style of comments
+    morecomment=[l][\color{green!40!black}\itshape]{//},
+	morecomment=[s][\color{green!40!black}\itshape]{/*}{*/},
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]",
+	keywordstyle=[2]\color{teal}\bfseries,
+	keywords=[3]{participant, identified, by, asset, default, optional, transaction, rule, description, operation, resource, condition, action},	% environment variables
+	keywordstyle=[3]\color{violet}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=true,
+	keywords=[1]{Address, Status, Data, DataPublisher, PublishData, metaData, info, ModifyData, VerifyData, PublishTransaction}, % generic keywords including crypto operations
+	keywordstyle=[1]\color{blue}\bfseries,
+	keywords=[2]{ String, DateTime, Double, Integer}	% types; money and time units
+}
+
+\lstset{
+	language=modelLang,
+	backgroundcolor=\color{verylightgray!30},
+	extendedchars=true,
+	basicstyle=\linespread{1}\scriptsize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=none,
+% 	numberstyle=\tiny\sffamily,
+% 	numbersep=5pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b,
+	numberbychapter=false
+}
+
+% \lstdefinestyle{numbers}
+% {numbers=left, stepnumber=1, numberstyle=\tiny, numbersep=10pt}
+% \lstdefinestyle{nonumbers}
+% {numbers=none}

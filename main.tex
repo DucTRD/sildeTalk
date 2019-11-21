@@ -1,0 +1,71 @@
+\documentclass[11pt]{beamer}
+\usepackage{pgf-umlsd}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage[center]{caption}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{listings}
+\include{style}
+%%%%%%%% tema e cor %%%%%%%%
+\mode<presentation> {
+\usetheme{Madrid}
+%\usecolortheme{albatross}
+}
+
+\input{config.tex}
+
+%%%%%%%% titulo e subtitulo %%%%%%%%
+\title[Blockchain-based Open Data]{Blockchain-based Open Data: An Approach for Resolving Data Integrity and Transparency} 
+
+%%%%%%%% nome dos autores %%%%%%%%
+\author[Dinh-Duc Truong]
+{Dinh-Duc~Truong}
+% Van-Thanh~Nguyen, Quoc-Bao~Nguyen, Huynh-Huy~Nguyen, Tuan-Anh~Tran,  Nhat-Quang~Le, An-Khuong~Nguyen} 
+
+\begin{document}
+\input{files/pre-slides.tex}
+
+%%%%%%%% slides %%%%%%%%
+\section{Introduction} 
+\input{files/introduction.tex}
+
+\section{Background}
+\input{files/background.tex}
+
+\section{Related works}
+\input{files/relatedworks.tex}
+
+\section{Proposed Architecture}
+\input{files/proposeArchitecture.tex}
+
+\section{Implementation}
+\input{files/Implementation.tex}
+
+\section{Testing}
+\input{files/testing.tex}
+
+\section{Conclusion}
+\input{files/conclusions.tex}
+
+
+\begin{frame}{Q\&A}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth,height=0.4\textwidth]{img/Q-A.png}
+        % \caption{Architecture overview}
+        % \label{fig:arOv}
+    \end{figure}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+% \begin{frame}
+% \titlepage 
+% \end{frame}
+
+
+\end{document}

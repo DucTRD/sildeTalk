@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Background}{10}{0}{2}
+\beamer@sectionintoc {3}{Related works}{45}{0}{3}
+\beamer@sectionintoc {4}{Proposed Architecture}{56}{0}{4}
+\beamer@sectionintoc {5}{Implementation}{69}{0}{5}
+\beamer@sectionintoc {6}{Testing}{94}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{97}{0}{7}

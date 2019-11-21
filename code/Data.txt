@@ -1,0 +1,7 @@
+asset Data identified by DataID {
+  o String DataID
+  o metaData meta
+  o String checksum
+  o String cid
+  --> DataPublisher publisher
+}

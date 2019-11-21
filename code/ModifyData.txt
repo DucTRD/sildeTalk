@@ -1,0 +1,10 @@
+transaction  ModifyData {
+  --> Data data
+  --> DataPublisher modifier
+  o metaData modifiedMeta
+  o String newCid
+}
+transaction VerifyData {
+ --> Data data 
+ o String checksum
+}

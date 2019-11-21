@@ -1,0 +1,8 @@
+rule PublishTransaction{
+  description: "Only publisher have all permission on his/her data"
+  participant(p): "org.com.opendata.DataPublisher"
+  operation: ALL
+  resource(r): "org.com.opendata.PublishData"
+  condition: (p.getIdentifier()===r.publisher.getIdentifier()&&r.publisher.getIdentifier()===r.data.publisher.getIdentifier())
+  action: ALLOW
+}

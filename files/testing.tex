@@ -1,0 +1,22 @@
+\begin{frame}{Testing}
+    \onslide<1->{\textbf{Hyperledger Caliper}\footnote{\url{https://github.com/hyperledger.caliper}} is a blockchain performance benchmark framework.}
+    % which allows users to test different blockchain solutions with predefined use cases, and get a set of performance test results.}
+    \pause
+    \onslide<2->{
+        \begin{table}[H]
+            \centering
+            \captionsetup{justification=centering}
+            \captionof{table}{Evaluated result of blockchain network performance\\Number of transactions: 100, transactions rate: 100 tps}
+            \label{tab:result}
+            \resizebox{\columnwidth}{!}{%
+                \begin{tabular}{@{}cccccc@{}}
+                    \toprule
+                    \multirow{2}{*}{\textbf{Transaction type}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Send rate\\ (tps)\end{tabular}}} & \multicolumn{3}{c}{\textbf{Latency (s)}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Throughput\\ (tps)\end{tabular}}}                                          \\ \cmidrule(lr){3-5}
+                                                               &                                                     & \multicolumn{1}{l}{\textbf{Min}}         & \multicolumn{1}{l}{\textbf{Max}}                    & \multicolumn{1}{l}{\textbf{Avg}} &     \\ \midrule
+                    PublishData                                & 96.4                                                & 6.45                                     & 16.08                                               & 11.73                            & 6.1 \\
+                    ModifyData                                 & 101.0                                               & 6.60                                     & 15.67                                               & 11.27                            & 6.3 \\
+                    DownloadData                               & 100.6                                               & 6.66                                     & 16.09                                               & 11.06                            & 6.1 \\ \bottomrule
+                \end{tabular}
+            }
+        \end{table}}
+\end{frame}

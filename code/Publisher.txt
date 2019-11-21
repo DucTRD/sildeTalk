@@ -1,0 +1,4 @@
+participant DataPublisher identified by DataPublisherID {
+  o String DataPublisherID
+  o info PublisherInfo
+}

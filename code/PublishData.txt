@@ -1,0 +1,4 @@
+transaction PublishData {
+  --> DataPublisher publisher
+  --> Data data
+}
